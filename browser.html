@@ -1,0 +1,16 @@
+<div class="browser">
+  <h2>Valitse elokuva n&auml;hd&auml;ksesi ja kirjoittaaksesi arvosteluita</h2>
+  <ul class="center block">
+    <li ng-repeat="movie in movies"
+        class="block"
+    >
+      <a href="#movie"
+         ng-click="viewmovie(movie.id)"
+      >
+        <img src="covers/{{movie.cover}}"
+             class="block float-left no-clear"
+        />
+      </a>
+    </li>
+  </ul>
+</div>

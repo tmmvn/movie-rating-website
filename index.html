@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=euc-kr"
+    >
+    <title>Kriitikkoilija</title>
+    <meta name="description"
+          content="Jokaisessa asuu kriitikko: Elokuvien arvostelusivusto"
+    />
+    <meta name="author"
+          content="Codemeddler"
+    />
+    <meta name="viewport"
+          content="width=device-width, maximum-scale=1.0, user-scalable=2.0;"
+    />
+    <link rel="stylesheet"
+          href="css/index.css"
+    />
+    <script type="text/javascript"
+            src="js/angular.min.js"
+    ></script>
+    <script type="text/javascript"
+            src="js/angular-route.js"
+    ></script>
+    <script src="js/angular-animate.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body ng-app="reviewapp"
+        ng-controller="reviewctrl"
+  >
+    <header ng-show="showback"
+            ng-hide="hideback"
+    >
+      <nav>
+        <a href="#movies">Elokuvalistaukseen</a>
+      </nav>
+    </header>
+    <main>
+      <div ng-view></div>
+    </main>
+    <footer ng-show="allowreview"
+            ng-hide="disallowreview"
+    >
+      <form>
+        Nimimerkki:
+        <input type="text"
+               ng-model="username"
+        >
+        Arvosana:
+        <select ng-model="score">
+          <option value="0">0
+          <option value="1">1
+          <option value="2">2
+          <option value="3">3
+          <option value="4">4
+          <option value="5">5
+        </select>
+        <textarea type="text"
+                  ng-model="reviewtext"
+        >Arvio</textarea>
+        <button ng-click="submitreview()">J&auml;t&auml; arvostelu</button>
+      </form>
+    </footer>
+  </body>
+</html>

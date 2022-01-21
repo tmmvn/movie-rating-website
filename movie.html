@@ -1,0 +1,29 @@
+<div ng-repeat="movie in movies | filter:moviefilter"
+     class="movie"
+>
+  <h1>{{movie.title}}</h1>
+  <ul class="info">
+    <li class="info">Nimi:{{movie.title}}</li>
+    <li class="info">Vuosi:{{movie.year}}</li>
+    <li class="info">Ohjaaja:{{movie.director}}</li>
+    <li class="info">Kuvaus:{{movie.description}}</li>
+  </ul>
+  <h2>Kriittinen piste:</h2>
+  <h2 class="score">
+    {{movie.score}}
+  </h2>
+  <div ng-repeat="review in movie.reviews"
+       class="reviewblock"
+  >
+    <h3>{{review.review.reviewer}} -
+      <a href="#reviews"
+         ng-click="pickreviewer(review.review.reviewer)"
+      >Katso kaikki k&auml;ytt&auml;j&auml;n arvostelut
+      </a>
+    </h3>
+    <div class="reviewcontent">
+      <h2 class="score float-left">{{review.review.reviewscore}}</h2>
+      <p class="reviewtext">{{review.review.reviewtext}}</p>
+    </div>
+  </div>
+</div>
