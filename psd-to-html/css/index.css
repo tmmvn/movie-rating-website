@@ -1,0 +1,226 @@
+body
+{
+  font-family: "Source Sans Pro", "Helvetica Neue", Sans, serif;
+  font-size: 18px;
+  color: #1A668E;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+h1
+{
+  font-size: 2.375em;
+  font-style: italic;
+  font-weight: lighter;
+  margin-bottom: 0.3em;
+}
+img
+{
+  align-self: center;
+  margin: auto;
+}
+p
+{
+  margin-bottom: 0.5em;
+}
+a
+{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+mark
+{
+  background: rgba(255, 255, 255, 0);
+  color: #1A668E;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 1.66em;
+  clear: none;
+  margin-bottom: 0.375em;
+  display: block;
+}
+ul
+{
+  margin: auto;
+  padding: 2px;
+}
+li
+{
+  display: inline;
+  width: 10%;
+}
+main
+{
+  width: 100%;
+  margin: auto;
+}
+article
+{
+  clear: both;
+  width: 50%;
+  margin: auto;
+  padding: 2em;
+}
+@media only screen and (max-width: 690px)
+{
+  article
+  {
+    width: 90%;
+  }
+}
+article p
+{
+  color: #000000;
+}
+section
+{
+  border: 1px solid #D7D7D7;
+  float: left;
+  clear: none;
+  width: 547px;
+  min-height: 272px;
+  display: flex;
+  padding: 1%;
+}
+@media only screen and (max-width: 690px)
+{
+  section
+  {
+    width: 100%;
+  }
+}
+nav
+{
+  background-color: #012F47;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  width: 100%;
+}
+nav a
+{
+  display: inline-block;
+  color: #B7CAD6;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-weight: lighter;
+}
+nav .navigation-active
+{
+  color: #FFFFFF;
+}
+footer
+{
+  display: flex;
+}
+footer a
+{
+  padding: 5%;
+  margin-top: 0.375em;
+  margin-bottom: 0.375em;
+  align-self: flex-end;
+  white-space: nowrap;
+}
+.siteHeader
+{
+  margin-top: 18px;
+  height: auto;
+  min-height: 378px;
+  background-image: url("../img/iStock_000007037977Medium.png");
+  background-color: #A2DBFF;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  display: flex;
+}
+.siteHeader-headline
+{
+  width: 50%;
+  margin-left: 10%;
+  align-self: center;
+  color: #FFFFFF;
+  font-weight: 900;
+}
+.copyright
+{
+  background-color: #012F47;
+  width: 100%;
+  color: #8294A1;
+  font-size: 0.77em;
+  height: 100%;
+  padding: 1em;
+}
+.advantages-button
+{
+  background-color: #F07227;
+}
+.calculator-button
+{
+  background-color: #D50000;
+}
+.orders-button
+{
+  background-color: #1A668E;
+}
+.login-button
+{
+  background-color: #0AA9BC;
+}
+.services
+{
+  width: 70%;
+  margin: auto;
+  padding-top: 1em;
+}
+@media only screen and (max-width: 690px)
+{
+  .services
+  {
+    width: 100%;
+  }
+}
+.service-divider-image
+{
+  width: 39%;
+  clear: none;
+  float: left;
+  align-items: stretch;
+  display: flex;
+}
+@media only screen and (max-width: 690px)
+{
+  .service-divider-image
+  {
+    width: 19%;
+  }
+}
+.service-divider-text
+{
+  width: 60%;
+  clear: none;
+  float: right;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 5%;
+  padding-top: 3%;
+}
+@media only screen and (max-width: 690px)
+{
+  .service-divider-text
+  {
+    width: 80%;
+  }
+}
+.copyright-section
+{
+  display: block;
+  text-align: center;
+  width: 50%;
+  float: left;
+  background-color: #012F47;
+}
+

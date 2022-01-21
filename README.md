@@ -13,7 +13,7 @@ probably decipher the requirements from the results.
 
 ## What is included
 
-The full Angular application in Finnish.
+The full Angular application in Finnish. Also, a simple PSD to HTML website they made me do as a test too.
 
 ## Disclaimer
 
